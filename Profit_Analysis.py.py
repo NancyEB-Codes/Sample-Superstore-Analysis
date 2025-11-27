@@ -3,7 +3,7 @@ import plotly.express as px
 import streamlit as st
 
 
-df = pd.read_excel("C:\\Users\\buats\\OneDrive\\Documents\\STREAMLIT\\read_file\\Clean_Superstore_Data.xlsx")
+df = pd.read_excel("Clean_Superstore_Data.xlsx")
 # Streamlit App Title
 st.title("Superstore Profit Analysis")
 
@@ -64,5 +64,6 @@ fig.update_layout(yaxis={'categoryorder': 'total ascending'})
 
 # Display in Streamlit
 st.plotly_chart(fig, use_container_width=True)
+
 
 
