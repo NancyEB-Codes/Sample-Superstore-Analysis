@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px 
 
  
-df=("C:\Users\buats\OneDrive\Documents\STREAMLIT\read_file\Clean_Superstore_Data.xlsx")
+df="C:\\Users\\buats\\OneDrive\\Documents\\STREAMLIT\\read_file\\Clean_Superstore_Data.xlsx"
 
 import pandas as pd
 import streamlit as st
@@ -75,4 +75,5 @@ fig = px.pie(
 )
 
 st.plotly_chart(fig)
+
 
