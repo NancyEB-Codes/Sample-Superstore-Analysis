@@ -70,10 +70,11 @@ fig = px.pie(
     top_products,
     names='Product_Name',
     values='Total_Profit',
-    title='Top 5 Most Ordered Products (2011–2014) with Profitability',
+    title='Most Ordered Products (2011–2014) with Profitability',
     labels={'Product_Name': "Product", "Total_Profit": "Profitability"}
 
 )
 
 st.plotly_chart(fig)
+
 
