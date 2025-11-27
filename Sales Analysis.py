@@ -5,7 +5,7 @@ import plotly.express as px
 
 
 # Load dataset
-df=pd.read_excel("C:\\Users\\buats\\Downloads\\anaconda file\\CODEPRACTICE101\\STREAMLIT\\read_file\\Clean_Superstore_Data.xlsx")
+df=pd.read_excel("Clean_Superstore_Data.xlsx")
 
 # Convert Order_Date
   
@@ -41,10 +41,10 @@ st.dataframe(yearly_sales)
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-from read_file.data_file import get_data
+
 
 # Load dataset
-df=get_data()
+df=pd.read_excel("Clean_Superstore_Data.xlsx")
 
 # Convert Order Date to datetime
 df['Order_Date'] = pd.to_datetime(df['Order_Date'])
@@ -82,5 +82,6 @@ st.plotly_chart(fig, use_container_width=True)
 
 # Show data table
 st.dataframe(quarterly_sales)
+
 
 
