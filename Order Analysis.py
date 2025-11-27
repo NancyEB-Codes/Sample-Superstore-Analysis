@@ -1,9 +1,9 @@
 import streamlit as st 
 import pandas as pd
 import plotly.express as px 
-from read_file.data_file import get_data
+
  
-df=get_data()
+df=("C:\Users\buats\OneDrive\Documents\STREAMLIT\read_file\Clean_Superstore_Data.xlsx")
 
 import pandas as pd
 import streamlit as st
@@ -75,3 +75,4 @@ fig = px.pie(
 )
 
 st.plotly_chart(fig)
+
