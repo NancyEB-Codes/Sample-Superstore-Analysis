@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px 
 
 
-df = pd.read_excel("C:\\Users\\buats\\OneDrive\\Documents\\STREAMLIT\\read_file\\Clean_Superstore_Data.xlsx")
+df = pd.read_excel("Clean_Superstore_Data.xlsx")
 
 
 import pandas as pd
@@ -76,3 +76,4 @@ fig = px.pie(
 )
 
 st.plotly_chart(fig)
+
