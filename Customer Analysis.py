@@ -4,7 +4,7 @@ import plotly.express as px
 
 
 
-df=pd.read_excel("C:\\Users\\buats\\Downloads\\anaconda file\\CODEPRACTICE101\\STREAMLIT\\read_file\\Clean_Superstore_Data.xlsx")
+df=pd.read_excel("Clean_Superstore_Data.xlsx")
 
 df['Total Sales'] = df['Sales'] * df['Quantity']
 # Calculate Total Sales per row
@@ -61,5 +61,6 @@ fig = px.bar(
 
 # Show figure
 st.plotly_chart(fig)
+
 
 
