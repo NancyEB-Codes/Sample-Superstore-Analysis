@@ -3,7 +3,8 @@ import plotly.express as px
 import streamlit as st
 
 
-df = pd.read_excel("C:\\Users\\buats\\OneDrive\\Documents\\STREAMLIT\\read_file\\Clean_Superstore_Data.xlsx")
+df = pd.read_excel("read_file/Clean_Superstore_Data.xlsx")
+
 # Streamlit App Title
 st.title("Superstore Profit Analysis")
 
@@ -35,9 +36,8 @@ st.plotly_chart(fig, use_container_width=True)
 import pandas as pd
 import plotly.express as px
 import streamlit as st
-from read_file.data_file import get_data
 
-df=get_data()
+df = pd.read_excel("read_file/Clean_Superstore_Data.xlsx")
 
 # --- Bottom 10 Least Profitable Products ---
 least_profitable = (
@@ -64,5 +64,6 @@ fig.update_layout(yaxis={'categoryorder': 'total ascending'})
 
 # Display in Streamlit
 st.plotly_chart(fig, use_container_width=True)
+
 
 
