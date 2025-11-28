@@ -6,10 +6,6 @@ import plotly.express as px
 df = pd.read_excel("read_file/Clean_Superstore_Data.xlsx")
 
 
-
-import pandas as pd
-import streamlit as st
-
 df['Order_Date'] = pd.to_datetime(df['Order_Date'], errors='coerce')
 
 
@@ -36,13 +32,6 @@ fig=px.pie(
     labels={'Product_Name': 'Products', 'Order Count': 'Total Number Of orders'},
     )
 st.plotly_chart(fig)     
-
-
-
-
-import pandas as pd
-import streamlit as st
-import plotly.express as px
 
 
 df['Order_Date'] = pd.to_datetime(df['Order_Date'], errors='coerce')
@@ -77,4 +66,5 @@ fig = px.pie(
 )
 
 st.plotly_chart(fig)
+
 
