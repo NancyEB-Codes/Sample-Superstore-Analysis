@@ -1,6 +1,13 @@
 import streamlit as st 
 import pandas as pd
 
+import streamlit as st
+
+st.set_page_config(
+    page_title="Home",
+    page_icon="🏠",
+    layout="wide"
+)
 
 df=pd.read_excel("read_file/Clean_Superstore_Data.xlsx")
 
@@ -16,5 +23,6 @@ st.markdown(
 # Display the data in the app
 st.write("Below is a preview of the Sample Superstore dataset:")
 st.dataframe(df)
+
 
 
