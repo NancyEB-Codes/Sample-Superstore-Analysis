@@ -1,10 +1,10 @@
 import streamlit as st
 
 
-# Page config
+
 st.set_page_config(page_title="SAMPLE SUPERSTORE DATA ANALYSIS DASHBOARD",layout='wide')
 
-# Optional background image (web-based)
+
 def set_background_url(url):
     st.markdown(
         f"""
@@ -40,3 +40,4 @@ st.markdown("""
         </p>
     </div>
 """, unsafe_allow_html=True)
+
