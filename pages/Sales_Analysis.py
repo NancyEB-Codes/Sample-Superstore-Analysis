@@ -16,6 +16,8 @@ df['Year'] = df['Order_Date'].dt.year
 
 # Group by Year
 yearly_sales = df.groupby('Year')['Sales'].sum().reset_index()
+yearly_sales['Year'] = yearly_sales['Year'].astype(int)
+
 
 st.title("Superstore Total Yearly Sales (2011 - 2014)")
 
@@ -74,6 +76,7 @@ st.plotly_chart(fig, use_container_width=True)
 
 # Show data table
 st.dataframe(quarterly_sales)
+
 
 
 
